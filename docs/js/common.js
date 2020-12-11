@@ -87,6 +87,12 @@ $(function() {
 					slidesToShow: 2,
 				},
 			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
 		],				
 	}); 
 
