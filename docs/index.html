@@ -32,13 +32,15 @@
 		<link rel="icon" href="images/touch/apple-touch-icon-57x57.png" sizes="16x16">
 		<link rel="icon" href="images/touch/apple-touch-icon-57x57.png" sizes="32x32">
 		<link rel="icon" href="images/touch/apple-touch-icon-57x57.png" sizes="96x96">
-		<link rel="stylesheet" href="css/main.css?v=1607609295294">
+		<link rel="stylesheet" href="css/main.css?v=1607680567846">
 	</head>
 	<body>
 		<header>
 			<div class="container">
 				<div class="header__container">
-					<div class="header__logo"><a class="header__logo--link" href="#"><img class="img-responsive" src="images/logo.png" alt="domos"></a></div>
+					<div class="header__logo">
+						<div class="menu__touch"><a class="touch__btn touch-btn-js" href="#"><img class="img-responsive" src="images/icons/icon-nav.png" alt="#"></a></div><a class="header__logo--link" href="#"><img class="img-responsive" src="images/logo.png" alt="domos"></a>
+					</div>
 					<div class="header__phones">
 						<div class="header__phones--content">
 							<div class="header__phones--title">Звонок по России бесплатный</div>
@@ -54,17 +56,19 @@
 						</ul>
 					</div>
 				</div>
-				<div class="header__nav">
-					<ul class="main__nav">
-						<li><a class="is-active main__nav--link" href="#">О компании</a></li>
-						<li><a class="main__nav--link" href="#">Продукция</a></li>
-						<li><a class="main__nav--link" href="#">Наши бренды</a></li>
-						<li><a class="main__nav--link" href="#">Сотрудничество</a></li>
-						<li><a class="main__nav--link" href="#">Как оформить заказ</a></li>
-						<li><a class="main__nav--link" href="#">Преимущества</a></li>
-						<li><a class="main__nav--link" href="#">Наши работы</a></li>
-						<li><a class="main__nav--link" href="#">Контакты</a></li>
-					</ul>
+				<div class="header__nav--container">
+					<div class="header__nav">
+						<ul class="main__nav">
+							<li><a class="is-active main__nav--link link-scroll" href="#about__company">О компании</a></li>
+							<li><a class="main__nav--link link-scroll" href="#products">Продукция</a></li>
+							<li><a class="main__nav--link link-scroll" href="#brands">Наши бренды</a></li>
+							<li><a class="main__nav--link link-scroll" href="#cooperation">Сотрудничество</a></li>
+							<li><a class="main__nav--link link-scroll" href="#order__info">Как оформить заказ</a></li>
+							<li><a class="main__nav--link link-scroll" href="#advantages">Преимущества</a></li>
+							<li><a class="main__nav--link link-scroll" href="#projects">Наши работы</a></li>
+							<li><a class="main__nav--link link-scroll" href="#contacts">Контакты</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -144,7 +148,7 @@
 					</div>
 				</div>
 			</div>
-			<section class="about__company">
+			<section class="about__company" id="about__company">
 				<div class="container">
 					<h1>О компании</h1>
 					<div class="about__company--content">
@@ -196,7 +200,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="products__section">
+			<section class="products__section" id="products">
 				<div class="container">
 					<div class="h1">ПРОДУКЦИЯ</div>
 					<div class="products__content">
@@ -226,52 +230,52 @@
 					</div>
 				</div>
 			</section>
-			<section class="partner__container">
+			<section class="partner__container" id="partner">
 				<div class="container">
 					<div class="h1">Наши партнеры</div>
 					<div class="partner__content">
 						<ul class="partner__list">
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner1.png" alt="#" srcset="images/partners/partner1.png 1x, images/partners/partner1@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-1 lazyload img-responsive" data-src="images/partners/partner1.png" alt="#" srcset="images/partners/partner1.png 1x, images/partners/partner1@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner2.png" alt="#" srcset="images/partners/partner2.png 1x, images/partners/partner2@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-2 lazyload img-responsive" data-src="images/partners/partner2.png" alt="#" srcset="images/partners/partner2.png 1x, images/partners/partner2@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner3.png" alt="#" srcset="images/partners/partner3.png 1x, images/partners/partner3@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-3 lazyload img-responsive" data-src="images/partners/partner3.png" alt="#" srcset="images/partners/partner3.png 1x, images/partners/partner3@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner4.png" alt="#" srcset="images/partners/partner4.png 1x, images/partners/partner4@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-4 lazyload img-responsive" data-src="images/partners/partner4.png" alt="#" srcset="images/partners/partner4.png 1x, images/partners/partner4@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner5.png" alt="#" srcset="images/partners/partner5.png 1x, images/partners/partner5@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-5 lazyload img-responsive" data-src="images/partners/partner5.png" alt="#" srcset="images/partners/partner5.png 1x, images/partners/partner5@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner6.png" alt="#" srcset="images/partners/partner6.png 1x, images/partners/partner6@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-6 lazyload img-responsive" data-src="images/partners/partner6.png" alt="#" srcset="images/partners/partner6.png 1x, images/partners/partner6@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner7.png" alt="#" srcset="images/partners/partner7.png 1x, images/partners/partner7@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-7 lazyload img-responsive" data-src="images/partners/partner7.png" alt="#" srcset="images/partners/partner7.png 1x, images/partners/partner7@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner8.png" alt="#" srcset="images/partners/partner8.png 1x, images/partners/partner8@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-8 lazyload img-responsive" data-src="images/partners/partner8.png" alt="#" srcset="images/partners/partner8.png 1x, images/partners/partner8@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner9.png" alt="#" srcset="images/partners/partner9.png 1x, images/partners/partner9@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-9 lazyload img-responsive" data-src="images/partners/partner9.png" alt="#" srcset="images/partners/partner9.png 1x, images/partners/partner9@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner10.png" alt="#" srcset="images/partners/partner10.png 1x, images/partners/partner10@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-10 lazyload img-responsive" data-src="images/partners/partner10.png" alt="#" srcset="images/partners/partner10.png 1x, images/partners/partner10@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner11.png" alt="#" srcset="images/partners/partner11.png 1x, images/partners/partner11@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-11 lazyload img-responsive" data-src="images/partners/partner11.png" alt="#" srcset="images/partners/partner11.png 1x, images/partners/partner11@2x.png 2x" loading="lazy"></div>
 							</li>
 							<li class="partner__item">
-								<div><img class="lazyload img-responsive" data-src="images/partners/partner12.png" alt="#" srcset="images/partners/partner12.png 1x, images/partners/partner12@2x.png 2x" loading="lazy"></div>
+								<div><img class="partner--img-12 lazyload img-responsive" data-src="images/partners/partner12.png" alt="#" srcset="images/partners/partner12.png 1x, images/partners/partner12@2x.png 2x" loading="lazy"></div>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<section class="discount__container">
+			<section class="discount__container" id="discount">
 				<div class="container">
 					<div class="discount__content">
 						<div class="discount__left">
@@ -306,7 +310,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="cooperation__container">
+			<section class="cooperation__container" id="cooperation">
 				<div class="container">
 					<div class="h1">СОТРУДНИЧЕСТВО</div>
 					<div class="cooperation-sub-title">УСЛОВИЯ РАБОТЫ С ОПТОВЫМИ ПОКУПАТЕЛЯМИ — ЮРИДИЧЕСКИМИ И ФИЗИЧЕСКИМИ ЛИЦАМИ</div>
@@ -317,6 +321,7 @@
 						</ul>
 						<div class="cooperation__tab--content">
 							<div class="cooperation__tab-block tab1 is-show">
+								<div class="cooperation__tab--mobile is-blue">Мелкий опт</div>
 								<ul class="list-points">
 									<li>Дополнительная оптовая скидка предоставляется от цен интернет-магазина на акционные и неакционные товары брендов: Bodum, Walmer, Ceraflame, Premier, Cole &amp; Mason, Zyliss.</li>
 									<li>Дополнительная скидка СУММИРУЕТСЯ со скидками на сайте!</li>
@@ -375,6 +380,8 @@
 								</div>
 							</div>
 							<div class="cooperation__tab-block tab2">
+								<div class="cooperation__tab--mobile is-green">крупный опт</div>
+								<div class="clear"></div>
 								<p>При заказе на сумму более 100 000 рублей и организаторам совместных покупок предоставляются специальные цены для крупного опта.  Для получения прайс-листа Вам необходимо заполнить Заявку на получение прайс-листа. После получения заявки с Вами свяжется менеджер для уточнения условий сотрудничества.</p>
 							</div>
 						</div>
@@ -384,7 +391,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="order__info">
+			<section class="order__info" id="order__info">
 				<div class="container">
 					<div class="h1">Как оформить заказ</div>
 					<div class="clear"></div>
@@ -393,7 +400,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="pay__container">
+			<section class="pay__container" id="pay">
 				<div class="container">
 					<div class="h1">Как оплатить заказ</div>
 				</div>
@@ -435,7 +442,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="advantages__container">
+			<section class="advantages__container" id="advantages">
 				<div class="container">
 					<div class="h1">Наши преимущества</div>
 					<div class="advantages__content">
@@ -522,7 +529,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="brands__container">
+			<section class="brands__container" id="brands">
 				<div class="container">
 					<div class="h1">Наши бренды</div>
 					<div class="clear"></div>
@@ -590,7 +597,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="projects__container">
+			<section class="projects__container" id="projects">
 				<div class="container">
 					<div class="h1">Наши проекты</div>
 				</div>
@@ -600,28 +607,28 @@
 							<div class="project__item">
 								<div class="project__item--img">
 									<picture>
-										<source media="(max-width: 639px)" srcset="images/simple.png"><img class="img-responsive" src="images/projects/pr1.jpg" alt="#">
+										<source media="(max-width: 639px)" srcset="images/projects/pr1-640.jpg"><img class="img-responsive" src="images/projects/pr1.jpg" alt="#">
 									</picture>
 								</div>
 							</div>
 							<div class="project__item">
 								<div class="project__item--img">
 									<picture>
-										<source media="(max-width: 639px)" srcset="images/simple.png"><img class="img-responsive" src="images/projects/pr1.jpg" alt="#">
+										<source media="(max-width: 639px)" srcset="images/projects/pr1-640.jpg"><img class="img-responsive" src="images/projects/pr1.jpg" alt="#">
 									</picture>
 								</div>
 							</div>
 							<div class="project__item">
 								<div class="project__item--img">
 									<picture>
-										<source media="(max-width: 639px)" srcset="images/simple.png"><img class="img-responsive" src="images/projects/pr1.jpg" alt="#">
+										<source media="(max-width: 639px)" srcset="images/projects/pr1-640.jpg"><img class="img-responsive" src="images/projects/pr1.jpg" alt="#">
 									</picture>
 								</div>
 							</div>
 							<div class="project__item">
 								<div class="project__item--img">
 									<picture>
-										<source media="(max-width: 639px)" srcset="images/simple.png"><img class="img-responsive" src="images/projects/pr1.jpg" alt="#">
+										<source media="(max-width: 639px)" srcset="images/projects/pr1-640.jpg"><img class="img-responsive" src="images/projects/pr1.jpg" alt="#">
 									</picture>
 								</div>
 							</div>
@@ -664,7 +671,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews__container">
+			<section class="reviews__container" id="reviews">
 				<div class="container">
 					<div class="h1">ОТЗЫВЫ</div>
 					<div class="reviews__content">
@@ -727,7 +734,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="footer__contacts">
+			<section class="footer__contacts" id="contacts">
 				<div class="container">
 					<div class="footer__content">
 						<div class="footer__content--row">
@@ -807,7 +814,7 @@
 				</div>
 			</div>
 		</footer>
-		<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1607609295295">
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1607680567848">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&amp;family=Open+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
 		<div class="modal-container modal-small" id="modalCall">
@@ -826,10 +833,10 @@
 				</form>
 			</div>
 		</div>
-		<script src="js/lazyimage.js?v=1607609295295"></script>
-		<script src="js/vendor.js?v=1607609295295"></script>
-		<script src="js/main.js?v=1607609295295"></script>
-		<script src="js/common.js?v=1607609295295"></script>
-		<script src="js/jquery.fancybox.min.js?v=1607609295295"></script>
+		<script src="js/lazyimage.js?v=1607680567848"></script>
+		<script src="js/vendor.js?v=1607680567848"></script>
+		<script src="js/main.js?v=1607680567848"></script>
+		<script src="js/common.js?v=1607680567848"></script>
+		<script src="js/jquery.fancybox.min.js?v=1607680567848"></script>
 	</body>
 </html>
