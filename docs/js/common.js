@@ -1,5 +1,6 @@
 $(function() {
- 
+	
+	// главный слайдер
 	$(".mainSliderInit").slick({
 		infinite: true,
 		dots: true,
@@ -9,6 +10,7 @@ $(function() {
 		touchThreshold: 50
 	}); 
 
+		// СОТРУДНИЧЕСТВО табы
 	$(".coop-tab-js").on("click", function (e) {
 		e.preventDefault();
 
@@ -27,7 +29,7 @@ $(function() {
 				.show();
 		}
 	});	
-
+		// слайдер Наши проекты изображение
 	$('.slider-for').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -47,6 +49,7 @@ $(function() {
 		],
 
 	});
+	// слайдер Наши проекты текст
 	$('.slider-nav').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -69,16 +72,25 @@ $(function() {
 		],		
 	});	
 
-
+	// слайдер отзывов
 	$(".reviewsInit").slick({
 		infinite: true,
 		dots: false,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		arrows: true,
-		touchThreshold: 50
+		touchThreshold: 50,
+		responsive: [
+			{
+				breakpoint: 640,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+		],				
 	}); 
 
+	// показать форму width <= 1023
 	$(".btn-request-js").on("click", function (e) {
 		e.preventDefault();
 		var request_form = $('.main__request').find('.request__container');
@@ -93,6 +105,39 @@ $(function() {
 		}
 	});		
 	
+	// скролл до блока
+	$(".link-scroll").on("click", function (e) {
+	
+		if (this.hash !== "") {
+			e.preventDefault();
+			var hash = this.hash;
+
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function () {
+				window.location.hash = hash;
+			});			
+		}
+
+	});
+
+	// мобильное меню
+	$(".touch-btn-js").on("click", function (e) {
+		e.preventDefault();
+		var nav_block = $('.header__nav--container').find('.header__nav');
+		
+		if($(this).hasClass('is-active')) {
+			$(this).removeClass('is-active');
+			$(nav_block).hide();
+		}
+		else {
+			$(this).addClass('is-active');
+			$(nav_block).show();
+		}
+	});			
+
+
+// маска для телефона
 try {
  Inputmask("+7 (999) 999 - 9999").mask("input[type=tel]");
 } catch (e) {}
@@ -167,6 +212,11 @@ function resizePage() {
 			sliderSlickDestroy('advantages_slider');
 		};		
 
+	}
+
+	if(windowWidth >= 640) {
+		$(".touch-btn-js").removeClass('is-active');
+		$('.header__nav--container').find('.header__nav').removeAttr('style');
 	}
 
 	if(windowWidth <= 1023) {
